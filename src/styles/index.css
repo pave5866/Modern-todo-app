@@ -1,0 +1,134 @@
+@import './variables.css';
+@import './animations.css';
+
+/* Tailwind direktifleri */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-background: #ffffff; /* white */
+  --color-text: #1e293b; /* slate-800 */
+  --color-text-muted: #475569; /* slate-600 */
+  --color-border: rgba(203, 213, 225, 0.7); /* slate-300 at 70% */
+  --color-card: #f8fafc; /* slate-50 */
+}
+
+.dark {
+  --color-background: #1e293b; /* slate-800 */
+  --color-text: #f8fafc; /* slate-50 */
+  --color-text-muted: #94a3b8; /* slate-400 */
+  --color-border: rgba(51, 65, 85, 0.5); /* slate-700 at 50% */
+  --color-card: #0f172a; /* slate-900 */
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  color: var(--color-text);
+  transition: all 0.3s ease;
+  background-color: var(--color-background);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-tertiary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}
+
+/* Bazı genel utility sınıfları */
+.backdrop-blur {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.glass-effect {
+  background: var(--bg-card);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-normal) ease;
+}
+
+.glass-effect:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-lg);
+}
+
+.gradient-bg {
+  background: conic-gradient(at bottom left, var(--bg-gradient-1), var(--bg-gradient-2), var(--bg-gradient-3));
+}
+
+.text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, var(--accent-primary), var(--accent-secondary));
+}
+
+.focus-ring {
+  outline: none;
+  transition: box-shadow var(--transition-quick) ease;
+}
+
+.focus-ring:focus {
+  box-shadow: 0 0 0 2px var(--border-hover);
+}
+
+/* Erişilebilirlik için bazı yardımcı sınıflar */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.focus-visible:focus {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 2px;
+}
+
+/* Animasyonlu temalar için geçiş efekti */
+*, *::before, *::after {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+/* Animasyonlu düğmeler */
+button {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+button:active {
+  transform: scale(0.95);
+} 

@@ -1,0 +1,115 @@
+:root {
+  /* Koyu tema renkleri */
+  --dark-bg-gradient-1: rgb(15, 23, 42);
+  --dark-bg-gradient-2: rgb(88, 28, 135);
+  --dark-bg-gradient-3: rgb(15, 23, 42);
+  --dark-bg-card: rgba(30, 41, 59, 0.5);
+  --dark-bg-card-hover: rgba(51, 65, 85, 0.4);
+  --dark-bg-input: rgba(15, 23, 42, 0.5);
+  --dark-border-color: rgba(51, 65, 85, 0.5);
+  --dark-border-hover: rgba(56, 189, 248, 0.5);
+  --dark-text-primary: rgb(255, 255, 255);
+  --dark-text-secondary: rgb(148, 163, 184);
+  --dark-text-tertiary: rgb(100, 116, 139);
+  --dark-shadow-color: rgba(2, 6, 23, 0.8);
+  --dark-accent-primary: rgb(16, 185, 129);
+  --dark-accent-secondary: rgb(168, 85, 247);
+  --dark-accent-danger: rgb(239, 68, 68);
+  --dark-accent-warning: rgb(245, 158, 11);
+  --dark-accent-info: rgb(59, 130, 246);
+  --dark-priority-low: rgb(59, 130, 246);
+  --dark-priority-medium: rgb(245, 158, 11);
+  --dark-priority-high: rgb(239, 68, 68);
+  --dark-button-primary: rgb(16, 185, 129);
+  --dark-button-primary-hover: rgb(5, 150, 105);
+
+  /* Açık tema renkleri */
+  --light-bg-gradient-1: rgb(249, 250, 251);
+  --light-bg-gradient-2: rgb(236, 233, 253);
+  --light-bg-gradient-3: rgb(243, 244, 246);
+  --light-bg-card: rgba(255, 255, 255, 0.8);
+  --light-bg-card-hover: rgba(243, 244, 246, 0.7);
+  --light-bg-input: rgba(249, 250, 251, 0.9);
+  --light-border-color: rgba(209, 213, 219, 0.8);
+  --light-border-hover: rgba(6, 182, 212, 0.5);
+  --light-text-primary: rgb(17, 24, 39);
+  --light-text-secondary: rgb(75, 85, 99);
+  --light-text-tertiary: rgb(156, 163, 175);
+  --light-shadow-color: rgba(0, 0, 0, 0.1);
+  --light-accent-primary: rgb(5, 150, 105);
+  --light-accent-secondary: rgb(126, 34, 206);
+  --light-accent-danger: rgb(220, 38, 38);
+  --light-accent-warning: rgb(217, 119, 6);
+  --light-accent-info: rgb(37, 99, 235);
+  --light-priority-low: rgb(37, 99, 235);
+  --light-priority-medium: rgb(217, 119, 6);
+  --light-priority-high: rgb(220, 38, 38);
+  --light-button-primary: rgb(5, 150, 105);
+  --light-button-primary-hover: rgb(4, 120, 87);
+
+  /* Ortak değişkenler */
+  --border-radius-sm: 0.5rem;
+  --border-radius-md: 0.75rem;
+  --border-radius-lg: 1rem;
+  --border-radius-xl: 1.25rem;
+  --transition-quick: 200ms;
+  --transition-normal: 300ms;
+  --transition-slow: 500ms;
+  --shadow-sm: 0 1px 2px 0 var(--shadow-color);
+  --shadow-md: 0 4px 6px -1px var(--shadow-color), 0 2px 4px -1px var(--shadow-color);
+  --shadow-lg: 0 10px 15px -3px var(--shadow-color), 0 4px 6px -2px var(--shadow-color);
+  --shadow-xl: 0 20px 25px -5px var(--shadow-color), 0 10px 10px -5px var(--shadow-color);
+  --shadow-inner: inset 0 2px 4px 0 var(--shadow-color);
+}
+
+/* Karanlık tema varsayılan olarak etkin */
+:root {
+  --bg-gradient-1: var(--dark-bg-gradient-1);
+  --bg-gradient-2: var(--dark-bg-gradient-2);
+  --bg-gradient-3: var(--dark-bg-gradient-3);
+  --bg-card: var(--dark-bg-card);
+  --bg-card-hover: var(--dark-bg-card-hover);
+  --bg-input: var(--dark-bg-input);
+  --border-color: var(--dark-border-color);
+  --border-hover: var(--dark-border-hover);
+  --text-primary: var(--dark-text-primary);
+  --text-secondary: var(--dark-text-secondary);
+  --text-tertiary: var(--dark-text-tertiary);
+  --shadow-color: var(--dark-shadow-color);
+  --accent-primary: var(--dark-accent-primary);
+  --accent-secondary: var(--dark-accent-secondary);
+  --accent-danger: var(--dark-accent-danger);
+  --accent-warning: var(--dark-accent-warning);
+  --accent-info: var(--dark-accent-info);
+  --priority-low: var(--dark-priority-low);
+  --priority-medium: var(--dark-priority-medium);
+  --priority-high: var(--dark-priority-high);
+  --button-primary: var(--dark-button-primary);
+  --button-primary-hover: var(--dark-button-primary-hover);
+}
+
+/* Açık tema */
+.light-theme {
+  --bg-gradient-1: var(--light-bg-gradient-1);
+  --bg-gradient-2: var(--light-bg-gradient-2);
+  --bg-gradient-3: var(--light-bg-gradient-3);
+  --bg-card: var(--light-bg-card);
+  --bg-card-hover: var(--light-bg-card-hover);
+  --bg-input: var(--light-bg-input);
+  --border-color: var(--light-border-color);
+  --border-hover: var(--light-border-hover);
+  --text-primary: var(--light-text-primary);
+  --text-secondary: var(--light-text-secondary);
+  --text-tertiary: var(--light-text-tertiary);
+  --shadow-color: var(--light-shadow-color);
+  --accent-primary: var(--light-accent-primary);
+  --accent-secondary: var(--light-accent-secondary);
+  --accent-danger: var(--light-accent-danger);
+  --accent-warning: var(--light-accent-warning);
+  --accent-info: var(--light-accent-info);
+  --priority-low: var(--light-priority-low);
+  --priority-medium: var(--light-priority-medium);
+  --priority-high: var(--light-priority-high);
+  --button-primary: var(--light-button-primary);
+  --button-primary-hover: var(--light-button-primary-hover);
+} 
