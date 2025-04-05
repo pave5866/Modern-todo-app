@@ -2,7 +2,13 @@
 
 Modern ve kullanıcı dostu bir görev yönetim uygulaması.
 
-![Modern Todo App](https://github.com/user/modern-todo-app/raw/main/screenshots/app-preview.png)
+## Uygulama Görünümü
+
+### Masaüstü Görünümü
+![Todo App](./todo-app.png)
+
+### Mobil Görünümü
+![Todo App Mobile](./todo-app-mobile.png)
 
 ## Özellikler
 
