@@ -1,4 +1,4 @@
-# Modern Todo Uygulaması
+# <img src="https://raw.githubusercontent.com/tabler/tabler-icons/master/icons/check-list.svg" width="32" height="32" /> Modern Todo Uygulaması
 
 Modern ve kullanıcı dostu bir görev yönetim uygulaması.
 
