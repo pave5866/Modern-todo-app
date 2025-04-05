@@ -35,7 +35,7 @@ Modern ve kullanıcı dostu bir görev yönetim uygulaması.
 
 ```bash
 # Projeyi klonlayın
-git clone https://github.com/KULLANICI_ADINIZ/modern-todo-app.git
+git clone https://github.com/pave5866/Modern-todo-app.git
 
 # Proje klasörüne girin
 cd modern-todo-app
@@ -54,17 +54,6 @@ npm run dev
 3. Pomodoro zamanlayıcı ile çalışma verimliliğinizi artırın
 4. Görevlerinizi filtreleyerek daha kolay yönetin
 5. Sürükle & bırak ile görevlerinizi yeniden sıralayın
-
-## Ekran Görüntüleri
-
-### Açık Mod
-![Açık Mod](https://github.com/user/modern-todo-app/raw/main/screenshots/light-mode.png)
-
-### Koyu Mod
-![Koyu Mod](https://github.com/user/modern-todo-app/raw/main/screenshots/dark-mode.png)
-
-### Pomodoro Zamanlayıcı
-![Pomodoro](https://github.com/user/modern-todo-app/raw/main/screenshots/pomodoro.png)
 
 ## Lisans
 
